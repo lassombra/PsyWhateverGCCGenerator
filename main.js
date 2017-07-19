@@ -58,6 +58,7 @@ var prepositions = [
 	' around itself',
 	' in goggles',
 	' at a party',
+	' in bed',
 	''
 ];
 function createOption() {
