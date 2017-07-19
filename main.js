@@ -43,8 +43,8 @@ function writeOptions(options) {
 		return li;
 	});
 	for (var i = 0; i < lis.length; i++) {
-		ul.appendChild(lis[i]);
+		ul.append(lis[i]);
 	}
-	$('.target').innerHTML($(ul).innerHTML());
+	$('.target').innerHTML(ul.innerHTML());
 }
 $('.generate').click(createOptions);
