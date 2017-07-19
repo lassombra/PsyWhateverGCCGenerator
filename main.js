@@ -36,16 +36,14 @@ function createOptions() {
 	writeOptions(options);
 }
 function writeOptions(options) {
-	var ul = $('ul');
 	var lis = options.map(function (option) {
-		var li = $('li');
-		li.innerText = option;
+		var li = $('<li>');
+		li.text(option);
 		return li;
 	});
+	$('.target').empty();
 	for (var i = 0; i < lis.length; i++) {
-		ul.append(lis[i]);
+		$('.target').append(lis[i]);
 	}
-	ul.addClass('target');
-	$('.target').replaceWith(ul);
 }
 $('.generate').click(createOptions);
