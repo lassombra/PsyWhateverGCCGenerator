@@ -90,7 +90,7 @@ function createOptions() {
 		options.push(option);
 	}
 	options = options.map(function(option) {
-		return adjectives[option.adjective] + nouns[option.noun] + prepositions[options.preposition];
+		return adjectives[option.adjective] + nouns[option.noun] + prepositions[option.preposition];
 	});
 	writeOptions(options);
 }
