@@ -45,6 +45,7 @@ function writeOptions(options) {
 	for (var i = 0; i < lis.length; i++) {
 		ul.append(lis[i]);
 	}
-	$('.target').innerHTML(ul.innerHTML());
+	ul.addClass('target');
+	$('.target').replaceWith(ul);
 }
 $('.generate').click(createOptions);
